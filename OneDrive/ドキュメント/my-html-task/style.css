@@ -1,0 +1,365 @@
+/* ヘッダー部分 */
+.header {
+    background-color: #fff;
+    display: grid;
+    height: 70px;
+    width: 100%;
+   }
+
+
+
+@media screen and (max-width: 414px) {
+    .header {
+        height: 48px;
+        padding: 0;
+    }
+}
+@media screen and (max-width: 767px) {
+    .header {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+}
+@media screen and (max-width: 1080px) {
+    .header {
+        background-color: #fff;
+        z-index: 10;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .header {
+        position: fixed !important;
+    }
+}
+.header{
+      width: 100%;
+}
+
+.header-inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* ←ここで縦中央揃え */
+    margin: 0 36px;
+    max-width: 100%;
+    position: relative;
+}   
+
+
+
+@media screen and (max-width: 767px) {
+    .header-inner {
+        max-width: 100%;
+        margin: 0 16px;
+    }
+}
+
+
+
+@media screen and (min-width: 768px) {
+  .header-logo {
+   transition: opacity 0.2s;
+    }
+}
+
+
+
+.header-logo-image {
+    height: 16px;
+    width: auto;
+}
+
+@media screen and (max-width: 767px) {
+.header-logo-image {
+        display: block !important;
+    }
+}
+
+.header-logo {
+    display: block;
+    width: auto;
+    align-self: center;
+}
+
+.gnavilistItem_btn{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 36px 0 36px;
+    max-width: 100%;
+    position: relative;
+}
+
+.gnavilist {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.gnavilist{
+  list-style-type: none;
+}
+@media screen and (max-width: 767px) {
+    .gnavilist {
+        top: 70px;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .gnavilist {
+        overflow-y: scroll;
+        position: fixed;
+        top: 60px;
+        left: 100%;
+        width: 100%;
+        display: block;
+        padding-top: 20px;
+        padding-bottom: 75px;
+        transition: transform 0.5s;
+        z-index: 99;
+        background-color: rgba(0, 0, 0, 0.8);
+        -webkit-overflow-scrolling: touch;
+        height: 100%;
+    }
+}
+
+
+@media screen and (max-width: 1080px) {
+    .gnavihamberger {
+        cursor: pointer;
+        display: block;
+        position: relative;
+        width: 24px;
+        height: 17px;
+        margin-left: auto;  /* 左の余白を自動にして右寄せ */
+        margin-right: 16px; /* 右に適度な余白を */
+        z-index: 100;
+    }
+}
+@media screen and (max-width: 1080px) {
+    .gnavihamberger_line:first-child {
+        top: 0;
+    }
+}
+
+.gnavilistItem{
+  margin-right: 45px;
+}
+
+@media screen and (max-width: 1080px) {
+    .gnavilistItem {
+        margin-right: 0;
+    }
+}
+
+.gnavilistItem_link span{
+display: block;
+}
+
+@media screen and (max-width: 1080px) {
+    .gnavilistItem_link {
+        padding: 20px 0;
+    }
+}
+
+   .gnavilistItem_link>span:first-child{
+    font-family: "Lato", sans-serif;
+    font-size: 12px;
+    line-height: 14.4px;   
+}
+
+.gnavilistItem_link>span:last-child{
+    font-family: "Lato", sans-serif;
+    font-size: 10px;
+    line-height: 14.4px;
+    }
+    .first-view{
+    position: relative;
+    height: 739px;
+    }
+  .first-view-image{
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.gnavilistItem_btn {
+  align-items: center;
+  border-radius: 10px;
+  background-color: #F79214 ;
+  padding: 0 20px;
+  font-size: 12px;
+  font-weight: 700;
+  height: 40px;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  display: flex
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+body {
+    color: #333;
+    font-family: "游ゴシック", YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+img {
+    border: 0;
+    vertical-align: middle;
+}
+
+.header-inner>*:last-child {
+    display: inline-flex
+;
+}
+
+/* ファーストビュー部分 */
+    .firstview_container{
+    max-width: 1040px;
+    position:absolute; 
+    top: 60%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    max-width: 1040px;
+    width: 100%;
+    z-index: 2; /* 画像より前面にする */
+    text-align: center;
+    }
+
+    .firstviewcontainer{
+    position: relative;
+    width: fit-content;
+     }
+  .firstview_badge-image{
+    position: absolute;
+    top: -105px;
+    right: -150px;
+    }
+
+     .firstviewcontainer_title{
+    position: relative;
+    color: #333;
+    font-family: "Lato", sans-serif;
+    font-size: 42px;
+    font-weight: 800;
+    line-height: 63px;
+    margin-bottom: 16px;
+     }
+     @media screen and (max-width: 767px) {
+    .firstviewcontainer_title  {
+        font-size: 22px;
+        line-height: 36px;
+        position: relative;
+        width: fit-content;
+    }
+}
+
+  .main_btn {
+      align-items: center;
+    background-color: #F79214;
+    border: none;
+    border-radius: 38px;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    font-weight: 700;
+    height: 64px;
+    justify-content: center;
+    text-decoration: none;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 16px;
+     /* レスポンシブ対応の幅指定 */
+  width: 100%;
+  max-width: 300px;     /* PCでの最大幅を制限 */
+  margin: 0 auto 16px;  /* 中央寄せ */
+  padding: 0 24px;      /* 横方向の余白 */
+}
+
+
+
+/* チェックボックス自体は非表示 */
+.menu-toggle {
+  display: none;
+}
+
+/* ハンバーガーアイコン */
+.gnavihamberger {
+  display: none;
+  width: 30px;
+  height: 22px;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.gnavihamberger_line {
+  height: 3px;
+  background-color: #333;
+  border-radius: 2px;
+}
+
+/* メニュー初期状態：非表示 */
+@media screen and (max-width: 1080px) {
+  .gnavihamberger {
+    display: flex;
+  }
+
+  .gnavi {
+    position: fixed;
+    top: 70px;
+    left: 100%;
+    width: 100%;
+    height: calc(100% - 70px);
+    background-color: rgba(0, 0, 0, 0.9);
+    transition: left 0.3s ease;
+    z-index: 1000;
+  }
+
+  /* チェックボックスにチェックが入ったら表示 */
+  .menu-toggle:checked ~ .gnavi {
+    left: 0;
+  }
+
+  .gnavilist {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+    list-style: none;
+    text-align: center;
+  }
+
+  .gnavilistItem {
+    margin: 12px 0;
+  }
+
+  .gnavilistItem a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+  }
+
+  .gnavilistItem_btn {
+    background: #F79214;
+    padding: 10px 20px;
+    border-radius: 10px;
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+}
+
+body, div, p, ul, ol, li, dl, dt, dd, table, th, td, img, figure, h1, h2, h3, h4, h5, h6, form, select {
+    margin: 0;
+    padding: 0;
+}
+
