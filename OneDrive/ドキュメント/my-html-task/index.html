@@ -1,109 +1,102 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <meta charset="UTF-8" />
-    <title>サイト模写</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="style.css" />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <title>サイト模写</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="header-inner">
+      <!-- ロゴ -->
+      <a class="header-logo" href="https://camp.potepan.com/">
+        <img class="header-logo-image" src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/header-logo.png" alt="POTEPAN" />
+      </a>
 
-  <body>
-    <header class="header">
-      <div class="header-inner">
+      <!-- ハンバーガーメニューのトグル -->
+      <input type="checkbox" id="menu-toggle" class="menu-toggle" />
 
-        <!-- ロゴ -->
-        <a class="header-logo" href="https://camp.potepan.com/">
-          <img
-            class="header-logo-image"
-            src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/header-logo.png"
-            alt="POTEPAN"
-          />
-        </a>
+      <!-- ハンバーガーアイコン -->
+      <label for="menu-toggle" class="gnavihamberger">
+        <span class="gnavihamberger_line"></span>
+        <span class="gnavihamberger_line"></span>
+        <span class="gnavihamberger_line"></span>
+      </label>
 
-        <!-- ハンバーガーメニューのトグル -->
-        <input type="checkbox" id="menu-toggle" class="menu-toggle" />
-
-        <!-- ハンバーガーアイコン -->
-        <label for="menu-toggle" class="gnavihamberger">
-          <span class="gnavihamberger_line"></span>
-          <span class="gnavihamberger_line"></span>
-          <span class="gnavihamberger_line"></span>
-        </label>
-
-        <!-- ナビゲーション -->
-        <nav class="gnavi">
-          <ul class="gnavilist">
-            <li class="gnavilistItem">
-              <a href="https://camp.potepan.com/content" class="gnavilistItem_link">
-                <span>CONTENT</span>
-                <span>学習内容</span>
-              </a>
-            </li>
-            <li class="gnavilistItem">
-              <a href="https://camp.potepan.com/interview" class="gnavilistItem_link">
-                <span>INTERVIEW</span>
-                <span>受講生の声</span>
-              </a>
-            </li>
-            <li class="gnavilistItem">
-              <a href="https://camp.potepan.com/faq" class="gnavilistItem_link">
-                <span>FAQ</span>
-                <span>よくある質問</span>
-              </a>
-            </li>
-            <li class="gnavilistItem">
-              <a href="https://camp.potepan.com/recruit" class="gnavilistItem_link">
-                <span>RECRUIT</span>
-                <span>採用企業様へ</span>
-              </a>
-            </li>
-            <li class="gnavilistItem">
-              <a href="https://camp.potepan.com/courses/free-under-29" class="gnavilistItem_link">
-                <span>U29</span>
-                <span>29歳以下の方へ</span>
-              </a>
-            </li>
-            <li class="gnavilistItem">
-              <a href="https://camp.potepan.com/contact" class="gnavilistItem_btn">
-                無料カウンセリング
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-
-    <main>
-      <section class="first-view">
-        <img
-          src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/home/first-view/whole-visual.webp"
-          alt="firstview"
-          class="first-view-image"
-        />
-
-        <div class="firstview_container">
-          <div class="firstviewcontainer">
-            <h2 class="firstviewcontainer_title">
-              実践的なカリキュラムと<br />
-              豊富な提携求人で<br />
-              確実にITエンジニアへ
-              <img
-                class="firstview_badge-image"
-                src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/home/first-view/badge.svg"
-                alt="NO1"
-              />
-            </h2>
-            <a href="https://camp.potepan.com/contact" class="main_btn">
-              まずは無料カウンセリングへ
+      <!-- ナビゲーション -->
+      <nav class="gnavi">
+        <ul class="gnavilist">
+          <li class="gnavilistItem">
+            <a href="https://camp.potepan.com/content" class="gnavilistItem_link">
+              <span>CONTENT</span>
+              <span>学習内容</span>
             </a>
-            <p class="firstviewvontainer_sab">
-              ※ショッパーズアイ「プログラミングスクール10社を対象にしたサイト比較イメージ調査<br />
-              （2020 年 5 月 22 日～25 日）」より全国の22～49歳の男女691名へのインターネット調査
-            </p>
-          </div>
+          </li>
+          <li class="gnavilistItem">
+            <a href="https://camp.potepan.com/interview" class="gnavilistItem_link">
+              <span>INTERVIEW</span>
+              <span>受講生の声</span>
+            </a>
+          </li>
+          <li class="gnavilistItem">
+            <a href="https://camp.potepan.com/faq" class="gnavilistItem_link">
+              <span>FAQ</span>
+              <span>よくある質問</span>
+            </a>
+          </li>
+          <li class="gnavilistItem">
+            <a href="https://camp.potepan.com/recruit" class="gnavilistItem_link">
+              <span>RECRUIT</span>
+              <span>採用企業様へ</span>
+            </a>
+          </li>
+          <li class="gnavilistItem">
+            <a href="https://camp.potepan.com/courses/free-under-29" class="gnavilistItem_link">
+              <span>U29</span>
+              <span>29歳以下の方へ</span>
+            </a>
+          </li>
+          <li class="gnavilistItem">
+            <a href="https://camp.potepan.com/contact" class="gnavilistItem_btn">
+              無料カウンセリング
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="first-view">
+      <img class="first-view_bg-image first-view_bg-image--left-rectangle lazy loaded" src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/home/first-view/left-rectangle.svg" data-src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/home/first-view/left-rectangle.svg" alt="三角形（左上）" width="348" height="348" data-was-processed="true">
+     <img class="first-view_bg-image first-view_bg-image--right-rectangle lazy loaded"
+  src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/home/first-view/right-rectangle.svg"
+  alt="三角形（右下）">
+      <img class="first-view_bg-image first-view_bg-image--fill-rectangle lazy loaded" src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/home/first-view/fill-rectangle.svg" data-src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/home/first-view/fill-rectangle.svg" alt="長い円形" data-was-processed="true">
+      <img class="first-view_bg-image first-view_bg-image--main-visual lazy loaded" src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/home/first-view/main-visual.webp" data-src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/home/first-view/main-visual.webp" alt="メインビジュアル" width="775" height="auto" data-was-processed="true">
+      <img class="first-view_whole-image first-view_bg-image--main-visual-wholeimage lazy loaded" src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/home/first-view/whole-visual.webp" data-src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/home/first-view/whole-visual.webp" alt="メインビジュアル"  data-was-processed="true">
+      
+      
+      <div class="firstview_container">
+        <div class="firstviewcontainer">
+          <h2 class="firstviewcontainer_title">
+            実践的なカリキュラムと<br />
+            豊富な提携求人で<br />
+            確実にITエンジニアへ
+            <img class="firstview_badge-image" src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/home/first-view/badge.svg" alt="NO1" />
+          </h2>
+          <a href="https://camp.potepan.com/contact" class="main_btn">
+            まずは無料カウンセリングへ
+          </a>
+          <p class="firstviewvontainer_sab">
+            ※ショッパーズアイ「プログラミングスクール10社を対象にしたサイト比較イメージ調査<br />
+            （2020 年 5 月 22 日～25 日）」より全国の22～49歳の男女691名へのインターネット調査
+          </p>
         </div>
-      </section>
-    </main>
-  </body>
+      </div>
+    </section>
+  </main>
+</body>
 </html>
